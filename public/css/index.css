@@ -1,0 +1,385 @@
+/*  reset styles */
+html, body{ width:100%; height:100%; margin:0; padding:0; scroll-behavior: smooth; }
+body *{ margin:0; padding:0; box-sizing:border-box; }
+a{ text-decoration:none; }
+ol, ul{ list-style-type:none; }
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');  
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Livvic&display=swap');
+
+body{
+    height: auto;
+    background:rgb(252, 234, 205);
+}
+#meni{
+    height:100vh;
+    text-align: center;
+    position: relative;
+    box-shadow: inset 0px 0px 30px 5px rgba(129, 68, 32, 0.623),inset 0px 0px 30px 5px rgba(129, 68, 32, 0.623);
+}
+#meni h3{
+    font-size: 7vw;
+    font-family: 'Tangerine', serif;
+    font-weight: bold;
+    margin-left: 16vw;
+    padding-top:5vw;
+    padding-bottom:3vw;
+    width: 37vw;
+    color:rgb(133, 39, 42);
+    opacity: 0.9;
+}
+h1{
+    font-family: 'Tangerine', serif;
+    font-weight: bold;
+    color:rgb(133, 39, 42);
+    opacity: 0.9;
+}
+div.currency{
+    text-align: right;
+    padding-right: 50px;
+    font-family: 'Livvic', sans-serif;
+    font-weight: bold; 
+    color:rgb(133, 39, 42);
+    opacity: 0.9;
+}
+div.currency span{
+    margin-left: 20px;
+    cursor: pointer;
+}
+#meni .logo a img{
+    top: 4.5vw;
+    left: 7vw;
+}
+#pizza-menu{
+    width:100%;  
+    height:60vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#pizza-menu a{
+    color:rgb(133, 39, 42);
+}
+#pizza-menu .kategorije{  
+    width: 350px;
+    height:450px;
+    margin:1.8vw;
+    text-align: center;
+    border-radius:3%;
+    transition: box-shadow 0.3s ease-in-out;
+    background: linear-gradient(to bottom,  rgba(129, 68, 32, 0.37) 0%, rgba(245, 227, 213, 0.589) 50%);
+    box-shadow:0 0 20px rgb(185, 155, 141);
+}
+#pizza-menu .kategorije:hover {
+    box-shadow:0 0 20px rgb(102, 61, 43);
+    border-radius: 0;
+    cursor:pointer;
+}
+#pizza-menu .kategorije h1{
+    margin:1vw;
+    font-family: 'Livvic', sans-serif;
+    font-weight: bold; 
+    padding-top: 2vw;
+}
+#pizza-menu .kategorije img{
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 3%;
+}
+#w{
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#w h3{
+    font-size: 7vw;
+    font-family: 'Tangerine', serif;
+    font-weight: bold;
+    margin-left: 16vw;
+    padding-top:5vw;
+    padding-bottom:3vw;
+    width: 37vw;
+    color:rgb(133, 39, 42);
+    opacity: 0.9;
+}
+.prikazi{
+    display: flex;
+    padding-top: 8vw;
+    /* padding-bottom: 10vw; */
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: inset 0px 0px 30px 5px rgba(129, 68, 32, 0.623),inset 0px 0px 30px 5px rgba(129, 68, 32, 0.623);
+}
+.prikazi > div {
+    width: 15%;
+    height: 400px;
+    margin:1vw 0.5vw 2vw;
+    margin:4vw 0.5vw 2vw;
+    text-align: center;
+    box-shadow:0 0 20px rgb(185, 155, 141);
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius:3%;
+    font-family: 'Livvic', sans-serif;
+    color:rgb(88, 52, 40);
+}
+.prikazi > div:hover {
+    box-shadow: 0 0 7px #635a5a;
+    border-radius: 0;
+}
+.prikazi img{
+    width: 200px;
+    height: 200px;
+    margin: 20px 10px 10px;
+    border-radius: 3%;
+}
+.prikazi img:hover{
+    border-radius: 0;
+}
+.prikazi a{
+    color:rgb(184, 45, 45);
+}
+.prikazi a:hover{
+    font-weight: bold;
+}
+#order{
+    box-shadow: inset 0px 0px 30px 5px rgba(129, 68, 32, 0.623),inset 0px 0px 30px 5px rgba(129, 68, 32, 0.623);
+    padding-top: 50px;
+}
+p.price{
+    max-height: 30px;
+    cursor: pointer;
+}
+div#payment{
+    text-align: left;
+}
+div#payment p span{
+    display: inline-block;
+    width: 100px;
+    padding-left: 10px;
+}
+input.right{
+    height: 30px;
+    width: 6em;
+    text-align: right;
+    border: none;
+    background-color:#FCEACD;
+    color: black;
+    font-weight: 600;
+}
+span.right{
+    text-align: right;
+}
+span.sum{
+    padding-right: 4px;
+}
+div#payment .button{
+    margin: 20px;
+}
+#total{
+    height: 100px;
+}
+#total .sum{
+    margin-left: 20px;
+    height: 30px;
+    width: 6em;
+    border: none;
+    background-color:#FCEACD;
+}
+#total .button{
+    height: 2em;
+}
+.button{
+    background-color:rgb(184, 45, 45);
+}
+.hidden{
+    display: none;
+}
+
+div.order{
+    display: block;
+    text-align: left;
+    margin: 10px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 4px 2px rgba(40, 40, 40, 0.6);
+}
+div.order >*{
+    display: inline-block;
+    margin-right: 20px;
+}
+.order img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 3px;
+}
+div.order h1{
+    width: 200px;
+    font-size: 2vW;
+}
+div.order div{
+    width: 800px;
+}
+div.order input{
+    width: 30px;
+    border: none;
+    border-radius: 3px;
+    text-align: right;
+}
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  } */
+form{
+    width: 500px;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.naslovi{
+    text-transform: capitalize;
+    font-size: 1.4rem;
+}
+.razmak{
+    margin-top: 10px;
+    margin-top: 8px;
+    padding: 5px;
+    font-size: 0.9rem;
+}
+
+.footer{
+    height:15vh;
+    width:100%;;
+    background-image: url("../slike/drvena_pozadina2.jpg") ;
+    background-repeat: repeat;
+    background-position:center;
+    color:rgb(206, 163, 130);
+    font-family: 'Livvic', sans-serif;
+    font-size: 1.1rem;
+    display:flex;
+}
+
+.prikazi p{
+    color:rgb(46, 23, 5);
+    height: 4em;
+}
+.footer-cell{
+    flex-basis: 20%;
+    align-self: center;
+    text-align: center;
+}
+.footer-cell i{
+    font-size: 1.7rem;
+}
+.footer-cell a i:hover{
+    font-weight: bold;
+}
+.footer-cell a{
+    color:rgb(206, 163, 130);
+}
+
+/* screen sizes 1400px and down */
+@media(max-width: 1400px){
+    .prikazi > div {
+        width: 242px;
+        height: 390px;
+        margin-top:1vw;
+    }
+    #w .logo a img{
+        top:1.5vw;
+    }
+    .razmak{
+        margin-top: 8px;
+    }
+
+}
+/* screen sizes 1300px and down */
+@media(max-width: 1300px){
+    #pizza-menu .kategorije{  
+        width:250px;
+    }
+    #pizza-menu .kategorije img{
+        width: 200px;
+        height: 200px;
+    }
+    
+}
+/* screen sizes 1200px and down */
+@media(max-width: 1200px){
+    #pizza-menu .kategorije{  
+        width:300px;
+        margin:50px;
+        height: 400px;
+    }
+    #pizza-menu .kategorije img{
+        width: 250px;
+        height: 250px;
+    }
+    #meni{
+        height:1200px;
+    }
+}
+
+/* screen sizes 900px and down */
+@media(max-width: 900px){
+    #opis2{
+        margin-top:230px; 
+    }
+    #pizza-menu .kategorije{  
+        margin:10px;
+    }
+    #meni{
+        height:1000px;
+    }
+    #total .button{
+        margin-left: 90%;
+    }
+}
+/* screen sizes 1400px and down */
+@media(max-width: 1400px){
+    .logo1 a img{
+        width: 300px;
+        height: 220px;
+        top:4vh;
+    }
+    #opis2{
+        width:80%;
+        margin-right: 10%; 
+        margin-left: 10%; 
+        margin-top:250px; 
+    } 
+    #pizza-menu .kategorije{  
+        width: 270px;
+        height:auto;
+        text-align: center;
+    }
+    .footer{
+        background-image: url("../slike/drvena_pozadina.jpg") ;
+    }
+    #about{
+        background-position:95% 48%;
+        height: 85vh;
+    }
+    #text-about{
+        margin-top:-40vw;
+    }
+    #images-about{
+        margin-top:-34.5vw;
+    }
+
+}
+/* screen sizes 1660px and down */
+@media(max-width: 1660px){
+    #pizza-menu .kategorije{  
+        width: 300px;
+        height: 25vw;
+        margin-top:5vh;
+    }
+    #images-about{
+        margin-top:-34.5vw;
+    }
+}
