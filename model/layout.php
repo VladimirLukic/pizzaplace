@@ -1,5 +1,12 @@
 <?php
 
+session_start();
+(isset($_SESSION['rate']))? $rate = $_SESSION['rate']:$rate = 1;
+(isset($_SESSION['curr']))? $curr = $_SESSION['curr']:$curr = 'USD';
+
+// $rate = $_SESSION['rate'];
+// $curr = $_SESSION['curr'];
+
 class layout{
     function header(){
         print "<!DOCTYPE html>
@@ -16,19 +23,21 @@ class layout{
             <link rel='stylesheet' href='../public/css/index.css'>
         </head>
         <body>
-        <div class='currency'>
-            <span value='USD'>USD</span>
-            <span value='EUR'>EUR</span>
-        </div>";        
+            <div class='currency'>
+                <form action='../controllers/CurrencyController.php' method='POST'>
+                    <input class='valuta' type='submit' name='dollar' value='USD'>
+                    <input class='valuta' type='submit' name='euro' value='EUR'>
+                </form>        
+            </div>";
     }
 
-    function form(){
+    function form($curr){
         print "<form action='orderList.php' method='POST'>
                     <div id='form-div'>
                         <input type='text' id='input1' name='order' class='hidden'>
                         <input type='text' id='input2' name='sum' class='hidden'>
                         <p id='total' class='footer'>
-                            Total: <span class='sum'></span>
+                            Total: <span class='sum'></span><span>".$curr."</span>
                             <button class='btn button choose'>Choose</button>
                         </p>
                     </div>

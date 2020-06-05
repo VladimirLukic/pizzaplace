@@ -12,3 +12,4 @@ currencies.forEach(el=>el.onclick = ()=>{
     sessionStorage.setItem('currency', el.innerHTML);
     location.reload();
 })
+

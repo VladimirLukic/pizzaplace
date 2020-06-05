@@ -2,16 +2,15 @@ let sum = 0;
 let products = (JSON.parse(sessionStorage.getItem('products')))? JSON.parse(sessionStorage.getItem('products')):[];
 let prices = document.querySelectorAll(".price");
 let endSum = document.querySelector(".sum");
-let currency = document.querySelector(".currency");
+
+//form input fields
 let input1 = document.querySelector("#input1");
 let input2 = document.querySelector("#input2");
-input1.value = sessionStorage.getItem('products');
-input2.value = sessionStorage.getItem('sum');
 
 //click event on P tags with prices
 prices.forEach(el=>el.onclick=(e)=>{
     sum += Number(el.getAttribute('value'));
-    endSum.innerHTML = `${sum} USD`;
+    endSum.innerHTML = sum.toFixed(1);
     endSum.value= sum;
 
     //kreate an object with product data
@@ -29,10 +28,14 @@ prices.forEach(el=>el.onclick=(e)=>{
             }
         }
     }
+});
+
+document.querySelector(".choose").onclick = ()=>{
     sessionStorage.setItem('products', JSON.stringify(products));
     sessionStorage.setItem('sum', JSON.stringify(endSum.value));
 
     //stores values into input form
     input1.value = sessionStorage.getItem('products');
     input2.value = sessionStorage.getItem('sum');
-});
+
+}

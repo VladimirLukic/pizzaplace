@@ -5,6 +5,7 @@ include "../model/layout.php";
 
 $layout->header();
 $sandwiches = $food->getFood('sandwiches');
+$_SESSION['url'] = 'sandwiches';
 
 ?>
 
@@ -20,17 +21,18 @@ $sandwiches = $food->getFood('sandwiches');
                     <img src='../public/$sandwich[picture]' alt='picture'>
                     <h1 class='naslovi'>$sandwich[name]</h1>
                     <div class='razmak'>$sandwich[about]</div>
-                    <p class='price' value='$sandwich[price_1]'>". $sandwich['price_1']."</p>
+                    <p class='price' value='".$sandwich['price_1']*$rate."'>
+                    ". $sandwich['price_1']*$rate.$curr."</p>
                 </div>";
     }
-$layout->form();
+$layout->form($curr);
 
 ?>
         </div>
     </div>
         
 <script src="../public/js/listing.js"></script>
-<script src="../public/js/layout.js"></script>
+<!-- <script src="../public/js/layout.js"></script> -->
 <?php
 
 $layout->footer();
