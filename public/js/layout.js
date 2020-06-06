@@ -1,15 +1,8 @@
 
-(!sessionStorage.getItem('currency'))?
-sessionStorage.setItem('currency', 'USD'):'';
+let valuta = document.querySelectorAll(".valuta");
 
-let currNotes = document.querySelectorAll(".price");
-let currencies = document.querySelectorAll("div.currency span");
-
-currNotes.forEach(el=>el.innerHTML += sessionStorage.getItem('currency'));
-
-//changes the currency
-currencies.forEach(el=>el.onclick = ()=>{
-    sessionStorage.setItem('currency', el.innerHTML);
-    location.reload();
+valuta.forEach(el=>el.onclick=()=>{
+    sessionStorage.removeItem('products');
+    sessionStorage.removeItem('total');
+    sessionStorage.removeItem('sum');
 })
-

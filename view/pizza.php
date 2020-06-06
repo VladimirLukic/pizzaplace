@@ -33,7 +33,7 @@ $layout->form($curr);
     </div>
         
 <script src="../public/js/listing.js"></script>
-<!-- <script src="../public/js/layout.js"></script> -->
+<script src="../public/js/layout.js"></script>
 <?php
 
 $layout->footer();

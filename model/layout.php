@@ -4,9 +4,6 @@ session_start();
 (isset($_SESSION['rate']))? $rate = $_SESSION['rate']:$rate = 1;
 (isset($_SESSION['curr']))? $curr = $_SESSION['curr']:$curr = 'USD';
 
-// $rate = $_SESSION['rate'];
-// $curr = $_SESSION['curr'];
-
 class layout{
     function header(){
         print "<!DOCTYPE html>

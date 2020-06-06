@@ -62,6 +62,7 @@ $orderList = $order;
    </div>
         
 <script src="../public/js/order.js"></script>
+<script src="../public/js/layout.js"></script>
 <?php
 
 $layout->footer();
