@@ -14,6 +14,7 @@ $message='';
 
     <div id="meni">
         <h3>We prepare for you</h3>
+        <h1><?=$message?></h1>
         <div id="pizza-menu">
 
 <?php
@@ -30,7 +31,7 @@ $message='';
 ?>
 
         </div>
-        <h1><?=$message?></h1>
+        <!-- <h1><?=$message?></h1> -->
     </div>
 
 <?php

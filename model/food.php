@@ -15,7 +15,7 @@ class menu{
         try{
             $this->pdo=new PDO($dsn,$user,$pass,$options);
         }catch(PDOException $e){
-            echo "Kon JOK: ".$e->getMessage();
+            echo "Connection failed: ".$e->getMessage();
         }
     }
 
