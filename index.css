@@ -227,6 +227,14 @@ div.order input{
     border-radius: 3px;
     text-align: right;
 }
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  } */
 form{
     width: 500px;
     display: inline-block;
@@ -317,6 +325,21 @@ form{
     }
 }
 
+/* screen sizes 900px and down */
+@media(max-width: 900px){
+    #opis2{
+        margin-top:230px; 
+    }
+    #pizza-menu .kategorije{  
+        margin:10px;
+    }
+    #meni{
+        height:1000px;
+    }
+    #total .button{
+        margin-left: 90%;
+    }
+}
 /* screen sizes 1400px and down */
 @media(max-width: 1400px){
     .logo1 a img{
@@ -359,36 +382,5 @@ form{
     }
     #images-about{
         margin-top:-34.5vw;
-    }
-}
-
-/* screen sizes 900px and down */
-@media(max-width: 900px){
-    #opis2{
-        margin-top:230px; 
-    }
-    #pizza-menu .kategorije{  
-        margin:10px;
-    }
-    #meni{
-        height:1500px;
-    }
-    #total .button{
-        margin-left: 90%;
-    }
-    div#pizza-menu a{
-        margin-bottom: 250px;
-    }
-    div.footer{
-        height: 150px;
-    }
-    .footer-cell{
-        margin-left: 20px;
-    }
-    form{
-        width: 300px;
-    }
-    p#total .choose{
-        margin: 0;
     }
 }
